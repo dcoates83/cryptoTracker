@@ -7,7 +7,7 @@ import Suggestions from './Suggestions';
 const useStyles = makeStyles({
   navBar: {
     backgroundColor: '#F2F4FA',
-    flexGrow: 4,
+    width: '35%',
     display: 'grid',
     gridAutoFlow: 'row',
     justifyContent: 'space-evenly',
