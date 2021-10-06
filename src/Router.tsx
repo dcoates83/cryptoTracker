@@ -12,6 +12,7 @@ const useStyles = makeStyles({
     backgroundColor: '#eee',
     display: 'flex',
     flexDirection: 'column',
+    padding: '2rem',
   },
 });
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -32,7 +33,7 @@ const Router: React.FC<RouterType> = () => {
       {/* <Login/> */}
       {/* </Route>
         <Route path="/Trending"> */}
-      <Trending />
+      {/* <Trending />s */}
 
       {/* </Route>
           </Switch> */}

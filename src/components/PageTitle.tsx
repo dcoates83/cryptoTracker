@@ -1,25 +1,29 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
   spacing: {
-    backgroundColor: '#777',
-    flex: 1,
+
   },
 });
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
  interface PageTitleProps {
 name: string;
+subtitle: string;
 }
 
 const PageTitle: React.FC<PageTitleProps> = (props) => {
   const classes = useStyles();
-  const { name } = props;
+  const { name, subtitle } = props;
   return (
     <div
       className={classes.spacing}
     >
-      {name}
+      <Typography variant="h4" color="primary">{name}</Typography>
+      {
+        subtitle && <Typography variant="body1">{subtitle}</Typography>
+      }
+
     </div>
   );
 };

@@ -8,6 +8,7 @@ const useStyles = makeStyles({
   navBar: {
     backgroundColor: '#F2F4FA',
     width: '35%',
+    padding: '2rem',
     display: 'grid',
     gridAutoFlow: 'row',
     justifyContent: 'space-evenly',

@@ -47,7 +47,7 @@ export interface CryptoEntry {
   last_updated: string;
 }
 
-const default_coin_ids = [
+export const defaultCoinIds = [
   'bitcoin',
   'ethereum',
   'binancecoin',
@@ -66,7 +66,7 @@ const fetchWrapper = (url: string) => fetch(url, { mode: 'cors' }).then((resp) =
 
 export const getCoins = (coinIds?: string[]): Promise<CryptoEntry[]> => fetchWrapper(
   `https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=${(
-    coinIds || default_coin_ids
+    coinIds || defaultCoinIds
   ).join()}`,
 ).then((resp) => resp);
 

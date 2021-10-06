@@ -11,7 +11,10 @@ const Trending: React.FC = () => {
   const classes = useStyles();
   return (
     <div>
-      <PageTitle name="Trending" />
+      <PageTitle
+        name="Trending"
+        subtitle="Top-7 trending coins in the last 24 hours (according to coingecko.com)."
+      />
       <CoinListItem />
     </div>
   );
