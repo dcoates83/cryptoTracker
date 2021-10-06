@@ -33,7 +33,7 @@ const Router: React.FC<RouterType> = () => {
       {/* <Login/> */}
       {/* </Route>
         <Route path="/Trending"> */}
-      {/* <Trending />s */}
+      {/* <Trending /> */}
 
       {/* </Route>
           </Switch> */}

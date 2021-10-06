@@ -2,8 +2,8 @@ import React from 'react';
 import { makeStyles, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles({
-  spacing: {
-
+  pageTitle: {
+    marginBottom: '2rem',
   },
 });
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
@@ -17,7 +17,7 @@ const PageTitle: React.FC<PageTitleProps> = (props) => {
   const { name, subtitle } = props;
   return (
     <div
-      className={classes.spacing}
+      className={classes.pageTitle}
     >
       <Typography variant="h4" color="primary">{name}</Typography>
       {

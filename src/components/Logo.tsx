@@ -23,7 +23,7 @@ const Logo: React.FC<LogoType> = () => {
       <ThemeProvider theme={theme}>
         <img className={classes.logoImage} src="/images/crypto_logo.svg" alt="Logo" />
         {/* Better way for responsive text? */}
-        <Typography variant="h4">CrypoCrunch</Typography>
+        <Typography variant="h4">CryptoCrunch</Typography>
       </ThemeProvider>
     </div>
   );
